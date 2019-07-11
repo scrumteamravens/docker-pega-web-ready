@@ -5,9 +5,9 @@ FROM pegasystems/tomcat:9-jdk11 as release
 
 LABEL vendor="Pegasystems Inc." \
       name="Pega Tomcat Node" \
-      version="2.0.0"
+      version="2.1.0"
 
-ENV PEGA_DOCKER_VERSION=2.0
+ENV PEGA_DOCKER_VERSION=2.1.0
 
 # Create directory for storing heapdump
 RUN mkdir -p /heapdumps  && \
