@@ -1,6 +1,6 @@
 TAG = "qualitytest"
-PREFIX = $(shell git config --get remote.origin.url | tr ':.' '/'  | rev | cut -d '/' -f 3 | rev)
-REPO_NAME = "pega-ready"
+PREFIX = arvasrikanth
+REPO_NAME = "docker-pega-web-ready"
 
 all: image
 
