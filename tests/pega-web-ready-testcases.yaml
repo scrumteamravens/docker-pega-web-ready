@@ -665,7 +665,7 @@ commandTests:
         mv /tests/test-artifacts/templates/context.xml.tmpl /opt/pega/config/context.xml.tmpl &&
         bash -c './scripts/docker-entrypoint.sh' &&
         diff /usr/local/tomcat/conf/context.xml /tests/test-artifacts/templates/expected_context.xml > /tests/test-artifacts/templates/diffCheck.txt && 
-        cat /tests/test-artifacts/templates/diffCheck.txt && [ -s /tests/test-artifacts/templates/diffCheck.txt] && echo "context.xml is not properly dockerized" || echo "context.xml is properly dockerized"
+        cat /tests/test-artifacts/templates/diffCheck.txt && [ -s /tests/test-artifacts/templates/diffCheck.txt ] && echo "context.xml is not properly dockerized" || echo "context.xml is properly dockerized"
 
     exitCode: 0
     expectedOutput: ["context.xml is properly dockerized"]
@@ -691,7 +691,7 @@ commandTests:
         mv /tests/test-artifacts/templates/tomcat-users.xml.tmpl /opt/pega/config/tomcat-users.xml.tmpl &&
         bash -c './scripts/docker-entrypoint.sh' &&
         diff /usr/local/tomcat/conf/tomcat-users.xml /tests/test-artifacts/templates/expected_tomcat-users.xml > /tests/test-artifacts/templates/diffCheck.txt && 
-        cat /tests/test-artifacts/templates/diffCheck.txt && [ -s /tests/test-artifacts/templates/diffCheck.txt] && echo "tomcat-users.xml is not properly dockerized" || echo "tomcat-users.xml is properly dockerized"
+        cat /tests/test-artifacts/templates/diffCheck.txt && [ -s /tests/test-artifacts/templates/diffCheck.txt ] && echo "tomcat-users.xml is not properly dockerized" || echo "tomcat-users.xml is properly dockerized"
 
     exitCode: 0
     expectedOutput: ["tomcat-users.xml is properly dockerized",""]
@@ -714,7 +714,7 @@ commandTests:
     - |
         bash -c './scripts/docker-entrypoint.sh' &&        
         diff /usr/local/tomcat/conf/Catalina/localhost/prweb.xml /tests/test-artifacts/expected_prweb.xml > /tests/test-artifacts/diffCheck.txt && 
-        cat /tests/test-artifacts/diffCheck.txt && [ -s /tests/test-artifacts/diffCheck.txt] && echo "prweb.xml is not dockerized properly" || echo "prweb.xml is dockerized properly"  
+        cat /tests/test-artifacts/diffCheck.txt && [ -s /tests/test-artifacts/diffCheck.txt ] && echo "prweb.xml is not dockerized properly" || echo "prweb.xml is dockerized properly"  
     exitCode: 0
     expectedOutput: ["prweb.xml is dockerized properly"]
 # Verify the run argument for catalina.sh   
