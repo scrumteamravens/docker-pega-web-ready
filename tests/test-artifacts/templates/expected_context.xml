@@ -10,7 +10,7 @@
 		type="javax.sql.DataSource"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		driverClassName="org.postgresql.Driver"
-		url="jdbc:postgresql://localhost:5432/pega"
+		url="jdbc:postgresql://localhost:5432/pegadb"
 		username="postgres"
 		password="postgres"
 		minActive="50"
